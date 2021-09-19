@@ -11,6 +11,7 @@ plugins {
     id 'java-library'
 }
 
+//Set the Java version to 1.8 instead of manually configuring the build path
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
@@ -30,12 +31,11 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     
+    //This is our dependency that will let us use JDBC (Java Database Connection
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.18'
     
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.1'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
     
-    
-    
-    
+
 }
