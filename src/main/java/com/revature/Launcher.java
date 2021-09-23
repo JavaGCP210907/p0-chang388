@@ -13,9 +13,9 @@ public class Launcher {
 		// We are testing whether our Connection (from ConnectionUtil Class) is successful
 		//remember - the getConnection() method will return a Connection object if you reach the database successfully
 		try(Connection conn = ConnectionUtil.getConnection()){
-			System.out.println("Hello, connection was successful");
+			//System.out.println("Hello, connection was successful");
 		} catch (SQLException e) {
-			System.out.println("Connection Failed, boohoo");
+			System.out.println("Connection to Debora Library Database Failed");
 			e.printStackTrace();
 		}
 		

@@ -21,4 +21,12 @@ public interface Lib_books_DaoInterface {
 	public void borrowBook(String username, int bookId);
 	
 	public void returnBook(String username, int bookId);
+	
+	public List<Lib_books> vBT(String series);
+	
+	public List<Lib_books> vBA(String author_l_name);
+	
+	public List<Lib_books> vBTAvailable(String series);
+	
+	public List<Lib_books> vBAAvailable(String author_l_name);
 }

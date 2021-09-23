@@ -127,7 +127,7 @@ public class Lib_books {
 	@Override
 	public String toString() {
 		return "Book id: " + book_id + "\nBook Series: " + book_series + " - " + book_title
-				+ "\nAuthor Name=" + author_l_name + ", " + author_f_name; // + "\nChecked out by:" + user_name_fk;
+				+ "\nAuthor Name : " + author_l_name + ", " + author_f_name; // + "\nChecked out by:" + user_name_fk;
 	}
 	
 	

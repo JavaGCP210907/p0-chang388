@@ -93,7 +93,7 @@ public class Lib_users_DaoClass implements Lib_users_DaoInterface{
 				return null;
 			}
 			
-			System.out.println(rs.getString("user_pass"));
+			//System.out.println(rs.getString("user_pass"));
 			if(rs.getString("user_pass").equals(password)) {
 				Lib_users lib_user = new Lib_users(rs.getString("user_name"), rs.getString("user_pass"), rs.getString("f_name"), rs.getString("l_name"), rs.getBoolean("management"));
 				return lib_user;
